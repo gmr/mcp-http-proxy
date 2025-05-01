@@ -20,8 +20,13 @@ classifiers = [
     "Topic :: Scientific/Engineering :: Artificial Intelligence"
 ]
 dependencies = [
-    "httpx"
+    "httpx",
+    "orjson",
+    "pydantic"
 ]
+
+[project.scripts]
+mcp-http-proxy = "mcp_http_proxy.main:main"
 
 [project.urls]
 "Homepage" = "https://github.com/gmr/mcp-http-proxy"
